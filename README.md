@@ -1,4 +1,4 @@
-# 🦙LLaMa-To-Go🏃‍♀️
+# 🦙LLaMa-To-Go🏃‍♀️  (0.1.0 - 20260720_Jack_version)
 
 [<img src="cc-zero.svg" alt="CC0 Lizenz" width="100"/>](https://creativecommons.org/publicdomain/zero/1.0/)
 
