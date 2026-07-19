@@ -27,9 +27,18 @@ mk = glob.glob(os.path.join(SOURCE, 'models', 'manifests'))
 bm = glob.glob(os.path.join(SOURCE, 'models', 'blobs'))
 expected = mk + bm
 for p in expected:
-    log(p)
+    log(f"found {p}")
 
 unexpected = [ d for d in os.listdir(SOURCE) if d != 'models' ]
+
+ollama_call_keys = ["cache",
+                    "backup",
+                    "config.json",
+                    "history",
+                    "id_ed25519",
+                    "id_ed25519.pub",]
+
+unexpected = [ d for d in unexpected if d not in ollama_call_keys ]
 
 for p in unexpected:
     log(f"WARNING: unexpected directory models/{p}, if you put it there, we hope you know what it is")
