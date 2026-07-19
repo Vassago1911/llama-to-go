@@ -1,3 +1,15 @@
+First run:
+`bash run.sh $SOURCE_DIR $BACKUP_DIR`
+
+Every next run:
+`bash run.sh`
+
+Tool function:
+Saves your `.ollama/models`-files into .zip files per ollama model, and restores from pre-existing backups after that.
+
+Use:
+If you have multiple devices with similar ollama setups you only need to load the model ones to share in your LAN and backup to an eternal disk.
+
 Das Projekt besteht aus:
 
 0. **ollama_pathing.yml** - hat zwei Werte: models_source_dir, backup_target_dir, fuer Quelle und Backupziel
