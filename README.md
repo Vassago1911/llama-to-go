@@ -1,3 +1,7 @@
+# 🦙LLaMa-To-Go🏃‍♀️
+
+[<img src="cc-zero.svg" alt="CC0 Lizenz" width="100"/>](https://creativecommons.org/publicdomain/zero/1.0/)
+
 First run:
 `bash run.sh $SOURCE_DIR $BACKUP_DIR`
 
