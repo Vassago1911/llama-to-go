@@ -16,7 +16,7 @@ def get_blob_file_path(digest):
     return Path(f"{SOURCE}/models/blobs/sha256-{digest.split(':')[1]}")
 
 def read_manifest(manifest_path):
-    with open(Path.joinpath(SOURCE, manifest_path), 'r') as file:
+    with open(Path.joinpath(Path(SOURCE), manifest_path), 'r') as file:
         return json.load(file)
 
 def create_zip(model_name, model_tag, output_zip):

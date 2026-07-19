@@ -12,7 +12,7 @@ Tool function:
 Saves your `.ollama/models`-files into .zip files per ollama model, and restores from pre-existing backups after that.
 
 Use:
-If you have multiple devices with similar ollama setups you only need to load the model ones to share in your LAN and backup to an eternal disk.
+If you have multiple devices with similar ollama setups you only need to load the model once to share in your LAN and backup to an eternal disk.
 
 Das Projekt besteht aus:
 
