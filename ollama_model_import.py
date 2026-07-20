@@ -29,7 +29,7 @@ def import_model(input_zip):
 
     if file_list:
         file_info = file_list[0]
-        print(f"{input_zip:>64} --> {file_info.filename.split('models/')[0]} : {restored_files}/{total_files} files restored.")
+        print(f"{input_zip:>64} --> /{file_info.filename.split('models/')[0]} : {restored_files}/{total_files} files restored.")
 
 def main():
     parser = argparse.ArgumentParser(description='Import Ollama model with smart overwrite protection.')
