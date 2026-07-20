@@ -10,6 +10,13 @@ echo "$BACKUP_DIR"
 
 ollama list | tail -n +2 | while read -r name id size modified; do
     [[ -z "$name" ]] && continue
+
+    # Check if the model name contains '/', skip it
+    if [[ "$name" == *"/"* ]]; then
+        echo "Skipping $name (Contains '/')"
+        continue
+    fi
+
     model_name="${name%%:*}"
     model_tag="${name#*:}"
     [[ "$model_tag" == "$model_name" ]] && model_tag="latest"
