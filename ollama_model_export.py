@@ -42,7 +42,7 @@ def create_zip(model_name, model_tag, output_zip):
             full_config_path = Path.joinpath(Path(SOURCE), config_blob_path)
             zipf.write(full_config_path, arcname=config_blob_path)
 
-    print(f"Model '{repository}{model_name}:{model_tag}' exported successfully to '{output_zip}'")
+    print(f"Model '{model_name}:{model_tag}' exported successfully to '{output_zip}'")
     # print("You can import it to another Ollama instance with 'tar -xf <modelname>_<tag>_export.zip'")
 
 def main():
